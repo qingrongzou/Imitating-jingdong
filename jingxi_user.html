@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>账户信息</title>
+		<link rel="stylesheet" href="css/jingxi_user.css" />
+	</head>
+	<body>
+		<!--页面整体-->
+		<div id="wrapper">
+			<!--顶部导航背景（铺满屏幕）-->
+			<header class="topnav_bg">
+				<!--顶部导航-->
+				<nav class="topnav c">
+					<ul>
+						<li>
+							您好，欢迎来到京西!
+							<a href="jingxi_login.html" target="_blank">[登录]</a>
+							<a href="jingxi_regist.html" target="_blank">[免费注册]</a>
+						</li>
+						<li><a href="jingxi_order.html">我的订单</a></li>
+						<li><a href="#">客户服务</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!--顶部导航背景结束-->
+			<!--头部-->
+			<section id="header" class="c">
+				<!--head上方（包括标志，搜索框和右边两个按钮）-->
+				<div class="logos">
+					<!--标志-->
+					<div class="logo">
+						<img src="img/jingxi_logo.png" />
+					</div>
+					<!--搜索栏-->
+					<div class="search">
+						<span>
+							<input class="search_text" type="text" placeholder="请输入商品关键字" />
+							<input class="search_btn" type="button" value="搜索" />
+						</span>
+						<ul>
+							<li>热门搜索：</li>
+							<li><a href="#">D-Link无线路由</a></li>
+							<li><a href="#">休闲男鞋</a></li>
+							<li><a href="#">TCL空调</a></li>
+							<li><a href="#">耐克篮球鞋</a></li>
+						</ul>
+					</div>
+					<!--头部按钮-->
+					<div class="header_btn">
+						<a href="jingxi_user.html">  <input type="button" value="用户中心" /></a>
+						<a href="jingxi_mycart.html" target="_blank"><input type="button" value="去购物车结算"/></a>
+					</div>
+				</div>
+				<!--导航条-->
+				<nav class="nav">
+					<span>
+						全部商品分类
+					</span>
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">电脑频道</a></li>
+						<li><a href="#">家用电器</a></li>
+						<li><a href="#">品牌大全</a></li>
+						<li><a href="#">团购</a></li>
+						<li><a href="#">积分商城</a></li>
+						<li><a href="#">夺宝奇兵</a></li>
+					</ul>
+				</nav>
+				<!--导航条结束-->
+			</section>
+			<!--头部结束-->
+			<!--主要内容-->
+			<section id="main" class="c">
+				<!--主要内容左边开始-->
+				<!--主要内容标题（主要内容上边）-->
+				<div class="main_title">
+					<span>我的xx</span> 
+					<span>> 我的订单</span>
+				</div>
+				<div class="main_left">
+					<span>我的xx</span>
+					<ul>
+						<li>
+							<ul>
+								<li>订单中心</li>
+								<li><a href="jingxi_order.html">我的订单</a></li>
+								<li>我的关注</li>
+								<li>浏览历史</li>
+								<li>我的团购</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>账户中心</li>
+								<li><a href="jingxi_user.html">账户信息</a></li>
+								<li>账户余额</li>
+								<li>消费记录</li>
+								<li>我的积分</li>
+								<li><a href="jingxi_address.html">收货地址</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>订单中心</li>
+								<li>返修/退换货</li>
+								<li>取消订单记录</li>
+								<li>我的投诉</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--主要内容左边结束-->
+				<!--主要内容右边开始-->
+				<div class="main_right">
+					<!--主要内容右上方-->
+					<div class="main_right_top">
+						账户信息
+					</div>
+					<!--主要内容右下方-->
+					<div class="main_right_bottom">
+						<form action="#">
+							<table>
+								<tr>
+									<td>用户名：</td>
+									<td>diamondwang</td>
+								</tr>
+								<tr>
+									<td>昵称：</td>
+									<td><input type="text" placeholder="diamondwang" /> </td>
+								</tr>
+								<tr>
+									<td>邮箱：</td>
+									<td>dw@163.com</td>
+								</tr>
+								<tr>
+									<td>手机号码：</td>
+									<td><input type="text" placeholder="13333333333" /> </td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="submit" value="提交" /> </td>
+								</tr>
+							</table>
+						</form>
+					</div>
+					<!--主要内容右下方结束-->
+				</div>
+				<!--主要内容右边结束-->
+			</section>
+			<!--主要内容结束-->
+		</div>
+	</body>
+</html>

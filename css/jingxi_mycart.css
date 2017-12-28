@@ -1,0 +1,260 @@
+/*通用样式*/ 
+*{
+	margin: 0;
+	padding: 0;
+	white-space:nowrap;
+}
+.c{
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul{
+	list-style: none;
+	display: block;
+	overflow: hidden;
+}
+/*浮出样式*/
+@-webkit-keyframes scale{
+	0%{
+		transform: scale(0.6);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+/*整体样式*/
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+/*整体样式结束*/
+/*头部样式*/
+#header{
+	width: 100%;
+	height: 165px;
+	overflow: hidden;
+}
+/*顶部导航背景*/
+.topnav_bg{
+	width: 100%;
+	height: 30px;
+	background-color: #f6f6f6;
+}
+/*顶部导航*/
+.topnav{
+	width: 1200px;
+	height: 30px;
+	/*background: #eef;*/
+}
+.topnav ul{
+	float: right;
+	width: 384px;
+	height: 12px;
+	/*background: #fee;*/
+	overflow: hidden;
+	margin:9px 0;
+}
+.topnav ul li{
+	float: left;
+	font-size:12px ;
+	height: 12px;
+	line-height: 12px;
+	border-right:1px solid #cccccc ;
+	padding: 0 14px;
+}
+.topnav ul li:last-child{
+	border: 0px none;
+	padding-right: 0px;
+}
+.topnav ul li a{
+	color: #000;
+}
+.topnav ul li a:hover{
+	color: #dd0505;
+}
+/*顶部导航结束*/
+/*头部开始*/
+#header{
+	width: 1200px;
+	height: 92px;
+	
+}
+#header .logo{
+	padding-top: 18px;
+	height: 50px;
+	width: 259px;
+	float: left;
+}
+.nav{
+	width: 656px;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 25px;
+	float: right;
+	background: url(../img/mycart_nav_bg.jpg) no-repeat;
+}
+.nav li{
+	font-size: 12px;
+	float: left;
+	width: 218px;
+	text-align: center;
+}
+.nav li:first-child{
+	color: #FFFFFF;
+	font-weight: 600;
+}
+/*头部结束*/
+/*主要内容开始*/
+#main{
+	width: 1200px;
+	height: 530px;
+	overflow: hidden;
+	-webkit-animation-name: scale;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+}
+/*主要内容里所有input元素*/
+#main input{
+	outline: none;
+}
+/*购物车信息表格*/
+#main table{
+	border: 1px solid #e7e3e7;
+	border-top:1px solid #ce0000 ;
+	border-spacing: 0;
+	font-size: 12px;
+	color: #666666;
+}
+/*表格标题行*/
+#main table th{
+	height: 32px;
+	background: url(../img/cart_th_bg.jpg);
+}
+/*表格每一个单元格*/
+#main table td{
+	width: 152px;
+	height: 120px;
+	vertical-align: center;
+	text-align: center;
+	border-bottom: 1px solid #e7e3e7;
+	background-color: #fffdee;
+}
+/*表格里面的input元素*/
+#main table input{
+	width: 32px;
+	height: 15px;
+	float: left;
+	text-align: center;
+}
+/*表格里面的span元素(数量列里)*/
+#main table tr td span{
+	display: inline-block;
+	width:90px;
+	height: 20px;
+}
+/*表格里面的链接（操作列里面）*/
+#main table tr td a{
+	color: #005aa0;
+}
+/*表格第一列（只有商品照片）*/
+#main table tr td:nth-child(1){
+	padding:0 10px;
+	text-align: right;
+	width: 90px;
+}
+#main table tr td:nth-child(1) img{
+	border: 1px solid #e7e3e7;
+	width: 82px;
+	height: 82px;
+}
+/*表格第二列(商品介绍文字)*/
+#main table tr td:nth-child(2){
+	padding:0 10px 0 0;
+	color: #000;
+	width: 246px;
+	text-align: left;
+}
+/*表格第五列里面的图片（数量列里面的加减）*/
+#main table tr td:nth-child(5) img{
+	float: left;
+	margin:2px 5px;
+}
+/*表格第三列(单价列)*/
+#main table tr td:nth-child(3){
+	text-align: left;
+	width: 0;
+    padding: 0 35px 0 64px;
+}
+/*表格第六列(小计列)*/
+#main table tr td:nth-child(6){
+    color: #e4393c;
+    font-weight: 600;
+}
+/*表格第五行（总计）*/
+#main table tr:nth-child(5) td{
+    height: 36px;
+    background: url(../img/cart_th_bg.jpg);
+}
+#main table tr:nth-child(5) p{
+    display: inline;
+    color: #e4393c;
+    font-weight: 600;
+}
+/*表格下面的两个图片按钮*/
+#main>ul{
+	margin-top: 10px;
+}
+#main>ul li:first-child{
+	float: left;
+}
+#main>ul li:nth-child(2){
+	float: right;
+}
+/*主要内容结束*/
+/*底部*/
+#footer{
+	height: 120px;
+	width: 1198px;
+	text-align: center;
+	font-size:12px ;
+	padding-top:24px ;
+	overflow: hidden;
+	color: #aaaaaa;
+}
+/*底部上方（友情链接）*/
+#footer .friendlink{
+	width: 640px;
+	height: 16px;
+}
+.friendlink li{
+	float: left;
+	padding: 0 5px;
+	border-right: 1px solid #aaaaaa;
+}
+.friendlink li:last-child{
+	border: 0;
+}
+#footer a{
+	color: #aaaaaa;
+}
+/*底部中间(版权)*/
+#footer span{
+	line-height: 40px;
+}
+/*底部下方*/
+.footer_img{
+	width: 460px;
+}
+.footer_img li{
+	float: left;
+	padding-right: 5px;
+}
+.footer_img li:hover img{
+	border-radius: 50%;
+	box-shadow: 0 0 1px red;
+}
+/*底部结束*/

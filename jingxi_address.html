@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>地址簿</title>
+		<link rel="stylesheet" href="css/jingxi_address.css" />
+	</head>
+	<body>
+		<!--页面整体-->
+		<div id="wrapper">
+			<!--顶部导航背景（铺满屏幕）-->
+			<header class="topnav_bg">
+				<!--顶部导航-->
+				<nav class="topnav c">
+					<ul>
+						<li>
+							您好，欢迎来到京西!
+							<a href="jingxi_login.html" target="_blank">[登录]</a>
+							<a href="jingxi_regist.html" target="_blank">[免费注册]</a>
+						</li>
+						<li><a href="jingxi_order.html" target="_blank">我的订单</a></li>
+						<li><a href="#">客户服务</a></li>
+					</ul>
+				</nav>
+			</header>
+			<!--顶部导航背景结束-->
+			<!--头部-->
+			<section id="header" class="c">
+				<!--head上方（包括标志，搜索框和右边两个按钮）-->
+				<div class="logos">
+					<!--标志-->
+					<div class="logo">
+						<img src="img/jingxi_logo.png" />
+					</div>
+					<!--搜索栏-->
+					<div class="search">
+						<span>
+							<input class="search_text" type="text" value="请输入商品关键字" />
+							<input class="search_btn" type="button" value="搜索" />
+						</span>
+						<ul>
+							<li>热门搜索：</li>
+							<li><a href="#">D-Link无线路由</a></li>
+							<li><a href="#">休闲男鞋</a></li>
+							<li><a href="#">TCL空调</a></li>
+							<li><a href="#">耐克篮球鞋</a></li>
+						</ul>
+					</div>
+					<!--头部按钮-->
+					<div class="header_btn">
+						<a href="jingxi_user.html"> <input type="button" value="用户中心" /></a>
+						<a href="jingxi_mycart.html" target="_blank"><input type="button" value="去购物车结算"/></a>
+					</div>
+				</div>
+				<!--导航条-->
+				<nav class="nav">
+					<span>
+						全部商品分类
+					</span>
+					<ul>
+						<li><a href="#">首页</a></li>
+						<li><a href="#">电脑频道</a></li>
+						<li><a href="#">家用电器</a></li>
+						<li><a href="#">品牌大全</a></li>
+						<li><a href="#">团购</a></li>
+						<li><a href="#">积分商城</a></li>
+						<li><a href="#">夺宝奇兵</a></li>
+					</ul>
+				</nav>
+				<!--导航条结束-->
+			</section>
+			<!--头部结束-->
+			<!--主要内容-->
+			<section id="main" class="c">
+				<!--主要内容左边开始-->
+				<!--主要内容标题（主要内容上边）-->
+				<div class="main_title">
+					<span>我的xx</span> 
+					<span>> 我的订单</span>
+				</div>
+				<div class="main_left">
+					<span>我的xx</span>
+					<ul>
+						<li>
+							<ul>
+								<li>订单中心</li>
+								<li><a href="jingxi_order.html">我的订单</a></li>
+								<li>我的关注</li>
+								<li>浏览历史</li>
+								<li>我的团购</li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>账户中心</li>
+								<li><a href="jingxi_user.html">账户信息</a></li>
+								<li>账户余额</li>
+								<li>消费记录</li>
+								<li>我的积分</li>
+								<li><a href="jingxi_address.html">收货地址</a></li>
+							</ul>
+						</li>
+						<li>
+							<ul>
+								<li>订单中心</li>
+								<li>返修/退换货</li>
+								<li>取消订单记录</li>
+								<li>我的投诉</li>
+							</ul>
+						</li>
+					</ul>
+				</div>
+				<!--主要内容左边结束-->
+				<!--主要内容右边开始-->
+				<div class="main_right">
+					<!--主要内容右上方-->
+					<div class="main_right_top">
+						<div>收货地址簿</div>
+						<ul>
+							<li>
+								1.王超平 北京市 昌平区 建材城西路金燕龙办公楼一层 13555555555<br />
+								<a href="#">修改</a>
+								<a href="#">删除</a>
+								<a href="#">设为默认地址</a>
+							</li>
+							<li>
+								2.王超平 湖北省 武汉市 武昌 关山光谷软件园1号201 13333333333<br />
+								<a href="#">修改</a>
+								<a href="#">删除</a>
+								<a href="#">设为默认地址</a>
+							</li>
+						</ul>
+					</div>
+					<!--主要内容右下方-->
+					<div class="main_right_bottom">
+						<form action="#">
+							<table>
+								<tr>
+									<th colspan="2">新增/修改收货地址</th>
+								</tr>
+								<tr>
+									<td><img src="img/input_style.jpg" /> 收货人：</td>
+									<td><input class="name" type="text" name="name"/> </td>
+								</tr>
+								<tr>
+									<td><img src="img/input_style.jpg" /> 所在地区：</td>
+									<td class="select">
+										<select name="province">
+											<option value="choose">请选择</option>
+											<option value="beijing">北京</option>
+											<option value="beijing">四川</option>
+											<option value="beijing">上海</option>
+										</select> 
+										<select name="city">
+											<option value="choose">请选择</option>
+											<option value="chengdu">成都</option>
+											<option value="suining">遂宁</option>
+											<option value="panzhihua">攀枝花</option>
+										</select> 
+										<select name="rode">
+											<option value="choose">请选择</option>
+											<option value="guanghua">光华大道</option>
+											<option value="shuangnan">双楠大道</option>
+											<option value="liujiang">柳江大道</option>
+										</select> 
+									</td>
+								</tr>
+								<tr>
+									<td><img src="img/input_style.jpg" />  详细地址：</td>
+									<td><input class="address" type="text" name="address"/> </td>
+								</tr>
+								<tr>
+									<td><img src="img/input_style.jpg" /> 手机号码：</td>
+									<td><input class="phone" type="text" name="phone"/> </td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="checkbox" class="moren" name="moren"/><span>设为默认地址</span> </td>
+								</tr>
+								<tr>
+									<td></td>
+									<td><input type="button" value="保存" class="save" name="save"/> </td>
+								</tr>
+							</table>
+						</form>
+					</div>
+				</div>
+				<!--主要内容右边结束-->
+			</section>
+			<!--主要内容结束-->
+		</div>
+	</body>
+</html>

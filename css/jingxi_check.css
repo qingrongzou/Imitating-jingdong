@@ -1,0 +1,213 @@
+/*通用样式*/ 
+*{
+	margin: 0;
+	padding: 0;
+	white-space:nowrap;
+}
+.c{
+	margin: 0 auto;
+}
+a{
+	text-decoration: none;
+	color: black;
+}
+ul{
+	list-style: none;
+	display: block;
+	overflow: hidden;
+}
+/*浮出样式*/
+@-webkit-keyframes scale{
+	0%{
+		transform: scale(0.6);
+	}
+	100%{
+		transform: scale(1);
+	}
+}
+/*整体样式*/
+#wrapper{
+	width: 100%;
+	height: 100%;
+}
+/*整体样式结束*/
+/*头部样式*/
+#header{
+	width: 100%;
+	height: 165px;
+	overflow: hidden;
+}
+/*顶部导航背景*/
+.topnav_bg{
+	width: 100%;
+	height: 30px;
+	background-color: #f6f6f6;
+}
+/*顶部导航*/
+.topnav{
+	width: 1200px;
+	height: 30px;
+	/*background: #eef;*/
+}
+.topnav ul{
+	float: right;
+	width: 384px;
+	height: 12px;
+	/*background: #fee;*/
+	overflow: hidden;
+	margin:9px 0;
+}
+.topnav ul li{
+	float: left;
+	font-size:12px ;
+	height: 12px;
+	line-height: 12px;
+	border-right:1px solid #cccccc ;
+	padding: 0 14px;
+}
+.topnav ul li:last-child{
+	border: 0px none;
+	padding-right: 0px;
+}
+.topnav ul li a{
+	color: #000;
+}
+.topnav ul li a:hover{
+	color: #dd0505;
+}
+/*顶部导航结束*/
+/*头部开始*/
+#header{
+	width: 1200px;
+	height: 92px;
+	
+}
+#header .logo{
+	padding-top: 18px;
+	height: 50px;
+	width: 259px;
+	float: left;
+}
+.nav{
+	width: 656px;
+	height: 32px;
+	line-height: 32px;
+	margin-top: 25px;
+	float: right;
+	background: url(../img/check_nav_bg.jpg) no-repeat;
+}
+.nav li{
+	font-size: 12px;
+	float: left;
+	width: 218px;
+	text-align: center;
+}
+.nav li:nth-child(2){
+	color: #FFFFFF;
+	font-weight: 600;
+}
+/*头部结束*/
+/*主要内容开始*/
+#main{
+	width: 1200px;
+	height: 650px;
+	overflow: hidden;
+	-webkit-animation-name: scale;
+	-webkit-animation-duration: 0.8s;
+	-webkit-animation-timing-function: linear;
+	-webkit-animation-iteration-count: 1;
+}
+/*主要内容下的a元素*/
+#main a{
+	color: #005aa0;
+}
+#main a:hover{
+	color: #dd0505;
+}
+/*主要内容下第一层ul*/
+#main>ul{
+	width: 1198px;
+	height: 650px;
+	border: 1px solid #e7e3e7;
+	border-top:1px solid #ce0000 ;
+	font-size: 12px;
+	color: #666666;
+}
+/*主要内容下第一层的ul下的第一层li*/
+#main>ul>li{
+	border-bottom:1px dashed #e7e3e7;
+	margin:0 12px;
+}
+/*第一层ul下第六个li元素里的ul*/
+#main>ul>li:nth-child(6) ul{
+	padding-bottom:0 ;
+}
+/*第一层ul下第六个li元素*/
+#main>ul>li:nth-child(6){
+	border: 0 none;
+	
+}
+/*第一层ul下第七个li元素*/
+#main>ul>li:nth-child(7){
+	border: 0 none;
+	line-height:30px ;
+	text-align: right;
+}
+/*主要内容标题*/
+#main .main_tit{
+	background: url(../img/cart_th_bg.jpg);
+	height: 30px;
+	line-height: 30px;
+	font-size: 14px;
+	font-weight: 600;
+	border-bottom: 0 none;
+	margin:0;
+	text-indent: 10px;
+	color: #000000;
+	
+}
+/*主要内容下第二层ul*/
+#main>ul>li>ul{
+	padding: 12px 0;
+}
+/*第二层ul下第一个li元素*/
+#main>ul>li>ul>li:first-child{
+	font-weight: 600;
+	padding-bottom: 5px;
+	color: #000000;
+}
+/*主要内容里的table*/
+#main table{
+	border-spacing: 0;
+	text-align: center;
+	vertical-align: center;
+}
+#main table img{
+	border: 1px solid #e7e3e7;
+	width: 82px;
+	height: 82px;
+}
+#main table th{
+	height: 30px;
+	background: #dddddd;
+}
+#main table tr td{
+	width: 180px;
+	height: 110px;
+	border-bottom:1px dashed #e7e3e7;
+}
+#main table tr td:first-child{
+	width: 90px;
+}
+#main table tr td:nth-child(2){
+	width: 260px;
+	text-align: left;
+	width: 80px;
+	color: #000000;
+}
+#main table tr td:nth-child(3){
+	text-align: left;
+	padding: 0 14px 0 98px;
+}
+
+/*主要内容结束*/
